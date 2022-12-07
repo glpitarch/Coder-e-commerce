@@ -1,0 +1,55 @@
+const catalogueChains = 
+        [
+            {
+                id: "cadenas01",
+                category: "cadenas",
+                name: "Cadena n°1",
+                image: "images/products/cadena-oro-01.png",
+                description: "Cadena de oro",
+                material: "oro",
+                price: 3000,
+                stock: 1,
+            },
+            {
+                id: "cadenas02",
+                category: "cadenas",
+                name: "Cadena n°2",
+                image: "images/products/cadena-plata-01.png",
+                description: "Cadena de plata",
+                material: "plata",
+                price: 2000,
+                stock: 2,
+            },            
+            {
+                id: "cadenas03",
+                category: "cadenas",
+                name: "Cadena n°3",
+                image: "images/products/cadena-plata-y-oro-01.png",
+                description: "Cadena de plata y oro",
+                material: "plata y oro",
+                price: 1000,
+                stock: 3,
+            },
+            {
+                id: "cadenas04",
+                category: "cadenas",
+                name: "Cadena n°4",
+                image: "images/products/cadena-enchapada-01.png",
+                description: "Cadena enchapada en oro",
+                material: "enchapado en oro",
+                price: 3000,
+                stock: 1,
+            },
+            {
+                id: "cadenas05",
+                category: "cadenas",
+                name: "Cadena n°5",
+                image: "images/products/cadena-acero-01.png",
+                description: "Cadena de acero",
+                material: "acero",
+                price: 2000,
+                stock: 2,
+            },
+        ]
+        
+export default catalogueChains
