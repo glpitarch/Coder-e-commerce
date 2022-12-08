@@ -23,7 +23,7 @@ const NavBar = () => {
             <Nav className="me-auto">
 
               <div className='px-5'> 
-              <Nav.Link href=""><Link to='/' className='text-decoration-none '>Home</Link></Nav.Link>
+              <Nav.Link href=""><Link to='/' className='text-decoration-none text-muted'>Home</Link></Nav.Link>
               </div>
 
               <div className='px-5'> 
@@ -41,10 +41,10 @@ const NavBar = () => {
                       title={` Aros `}
                       className="BgColorWhite NoBorder text-center"
                       >
-                      <Dropdown.Item eventKey="1">Oro</Dropdown.Item>
-                      <Dropdown.Item eventKey="2">Plata</Dropdown.Item>
-                      <Dropdown.Item eventKey="3">Acero</Dropdown.Item>
-                      <Dropdown.Item eventKey="4">Todos</Dropdown.Item>
+                      <Dropdown.Item eventKey="1"><Link to='/category/aros/oro' className='text-body text-decoration-none'>Oro</Link></Dropdown.Item>
+                      <Dropdown.Item eventKey="2"><Link to='/category/aros/plata' className='text-body text-decoration-none'>Plata</Link></Dropdown.Item>
+                      <Dropdown.Item eventKey="3"><Link to='/category/aros/acero' className='text-body text-decoration-none'>Acero</Link></Dropdown.Item>
+                      <Dropdown.Item eventKey="4"><Link to='/category/aros' className='text-body text-decoration-none'>Todos</Link></Dropdown.Item>
                   </DropdownButton>
                 </div>
 
@@ -57,10 +57,10 @@ const NavBar = () => {
                       title={` Anillos `}
                       className="BgColorWhite NoBorder text-center" 
                       >
-                      <Dropdown.Item eventKey="5">Oro</Dropdown.Item>
-                      <Dropdown.Item eventKey="6">Plata</Dropdown.Item>
-                      <Dropdown.Item eventKey="7">Plata y oro</Dropdown.Item>
-                      <Dropdown.Item eventKey="8">Todos</Dropdown.Item>
+                      <Dropdown.Item eventKey="5"><Link to='/category/anillos/oro' className='text-body text-decoration-none'>Oro</Link></Dropdown.Item>
+                      <Dropdown.Item eventKey="6"><Link to='/category/anillos/plata' className='text-body text-decoration-none'>Plata</Link></Dropdown.Item>
+                      <Dropdown.Item eventKey="7"><Link to='/category/anillos/plata-oro' className='text-body text-decoration-none'>Plata y oro</Link></Dropdown.Item>
+                      <Dropdown.Item eventKey="8"><Link to='/category/anillos' className='text-body text-decoration-none'>Todos</Link></Dropdown.Item>
                   </DropdownButton>
                 </div>
 
@@ -72,12 +72,12 @@ const NavBar = () => {
                     title={` Cadenas `}
                     className="BgColorWhite NoBorder text-center" 
                     >
-                    <Dropdown.Item eventKey="9">Oro</Dropdown.Item>
-                    <Dropdown.Item eventKey="10">Plata</Dropdown.Item>
-                    <Dropdown.Item eventKey="11">Plata y oro</Dropdown.Item>
-                    <Dropdown.Item eventKey="12">Enchapado en oro</Dropdown.Item>
-                    <Dropdown.Item eventKey="13">Acero</Dropdown.Item>
-                    <Dropdown.Item eventKey="14">Todos</Dropdown.Item>
+                    <Dropdown.Item eventKey="9"><Link to='/category/cadenas/oro' className='text-body text-decoration-none'>Oro</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="10"><Link to='/category/cadenas/plata' className='text-body text-decoration-none'>Plata</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="11"><Link to='/category/cadenas/plata-oro' className='text-body text-decoration-none'>Plata y oro</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="12"><Link to='/category/cadenas/enchapado-oro' className='text-body text-decoration-none'>Enchapado en oro</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="13"><Link to='/category/cadenas/acero' className='text-body text-decoration-none'>Acero</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="14"><Link to='/category/cadenas' className='text-body text-decoration-none'>Todos</Link></Dropdown.Item>
                 </DropdownButton>
 
                 <DropdownButton
@@ -88,10 +88,10 @@ const NavBar = () => {
                     title={` Collares `}
                     className="BgColorWhite NoBorder text-center" 
                     >
-                    <Dropdown.Item eventKey="15">Oro</Dropdown.Item>
-                    <Dropdown.Item eventKey="16">Plata</Dropdown.Item>
-                    <Dropdown.Item eventKey="17">Acero</Dropdown.Item>
-                    <Dropdown.Item eventKey="18">Todos</Dropdown.Item>
+                    <Dropdown.Item eventKey="15"><Link to='/category/collares/oro' className='text-body text-decoration-none'>Oro</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="16"><Link to='/category/collares/plata' className='text-body text-decoration-none'>Plata</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="17"><Link to='/category/collares/acero' className='text-body text-decoration-none'>Acero</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="18"><Link to='/category/collares' className='text-body text-decoration-none'>Todos</Link></Dropdown.Item>
                 </DropdownButton>
 
                 <DropdownButton
@@ -102,10 +102,10 @@ const NavBar = () => {
                     title={` Dijes `}
                     className="BgColorWhite NoBorder text-center" 
                     >
-                    <Dropdown.Item eventKey="19">Oro</Dropdown.Item>
-                    <Dropdown.Item eventKey="20">Plata</Dropdown.Item>
-                    <Dropdown.Item eventKey="21">Acero</Dropdown.Item>
-                    <Dropdown.Item eventKey="22">Todos</Dropdown.Item>
+                    <Dropdown.Item eventKey="19"><Link to='/category/dijes/oro' className='text-body text-decoration-none'>Oro</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="20"><Link to='/category/dijes/plata' className='text-body text-decoration-none'>Plata</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="21"><Link to='/category/dijes/acero' className='text-body text-decoration-none'>Acero</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="22"><Link to='/category/dijes' className='text-body text-decoration-none'>Todos</Link></Dropdown.Item>
                 </DropdownButton>
 
               </NavDropdown>

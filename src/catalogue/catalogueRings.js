@@ -26,7 +26,7 @@ const catalogueRings =
                 name: "Anillo n°3",
                 image: "images/products/anillo-plata-y-oro-01.png",
                 description: "Anillo de plata y oro",
-                material: "plata y oro",
+                material: "plata-oro",
                 price: 1000,
                 stock: 3,
             },
