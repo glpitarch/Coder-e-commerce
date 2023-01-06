@@ -34,78 +34,78 @@ const NavBar = () => {
 
                 <div> 
                   <DropdownButton 
-                      key={'end'}
+                      key={'1'}
                       id={`dropdown-button-drop-${'end'}`}
                       drop={'end'}
                       variant="light"
                       title={` Aros `}
                       className="BgColorWhite NoBorder text-center"
                       >
-                      <Dropdown.Item eventKey="1"><Link to='/category/aros/oro' className='text-body text-decoration-none'>Oro</Link></Dropdown.Item>
-                      <Dropdown.Item eventKey="2"><Link to='/category/aros/plata' className='text-body text-decoration-none'>Plata</Link></Dropdown.Item>
-                      <Dropdown.Item eventKey="3"><Link to='/category/aros/acero' className='text-body text-decoration-none'>Acero</Link></Dropdown.Item>
-                      <Dropdown.Item eventKey="4"><Link to='/category/aros' className='text-body text-decoration-none'>Todos</Link></Dropdown.Item>
+                      <Dropdown.Item eventKey="1"><Link to='/categoria/aros/oro' className='text-body text-decoration-none'>Oro</Link></Dropdown.Item>
+                      <Dropdown.Item eventKey="2"><Link to='/categoria/aros/plata' className='text-body text-decoration-none'>Plata</Link></Dropdown.Item>
+                      <Dropdown.Item eventKey="3"><Link to='/categoria/aros/acero' className='text-body text-decoration-none'>Acero</Link></Dropdown.Item>
+                      <Dropdown.Item eventKey="4"><Link to='/categoria/aros' className='text-body text-decoration-none'>Todos</Link></Dropdown.Item>
                   </DropdownButton>
                 </div>
 
                 <div>
                   <DropdownButton
-                      key={'end'}
+                      key={'2'}
                       id={`dropdown-button-drop-${'end'}`}
                       drop={'end'}
                       variant="light"
                       title={` Anillos `}
                       className="BgColorWhite NoBorder text-center" 
                       >
-                      <Dropdown.Item eventKey="5"><Link to='/category/anillos/oro' className='text-body text-decoration-none'>Oro</Link></Dropdown.Item>
-                      <Dropdown.Item eventKey="6"><Link to='/category/anillos/plata' className='text-body text-decoration-none'>Plata</Link></Dropdown.Item>
-                      <Dropdown.Item eventKey="7"><Link to='/category/anillos/plata-oro' className='text-body text-decoration-none'>Plata y oro</Link></Dropdown.Item>
-                      <Dropdown.Item eventKey="8"><Link to='/category/anillos' className='text-body text-decoration-none'>Todos</Link></Dropdown.Item>
+                      <Dropdown.Item eventKey="5"><Link to='/categoria/anillos/oro' className='text-body text-decoration-none'>Oro</Link></Dropdown.Item>
+                      <Dropdown.Item eventKey="6"><Link to='/categoria/anillos/plata' className='text-body text-decoration-none'>Plata</Link></Dropdown.Item>
+                      <Dropdown.Item eventKey="7"><Link to='/categoria/anillos/plata-oro' className='text-body text-decoration-none'>Plata y oro</Link></Dropdown.Item>
+                      <Dropdown.Item eventKey="8"><Link to='/categoria/anillos' className='text-body text-decoration-none'>Todos</Link></Dropdown.Item>
                   </DropdownButton>
                 </div>
 
                 <DropdownButton
-                    key={'end'}
+                    key={'3'}
                     id={`dropdown-button-drop-${'end'}`}
                     drop={'end'}
                     variant="light"
                     title={` Cadenas `}
                     className="BgColorWhite NoBorder text-center" 
                     >
-                    <Dropdown.Item eventKey="9"><Link to='/category/cadenas/oro' className='text-body text-decoration-none'>Oro</Link></Dropdown.Item>
-                    <Dropdown.Item eventKey="10"><Link to='/category/cadenas/plata' className='text-body text-decoration-none'>Plata</Link></Dropdown.Item>
-                    <Dropdown.Item eventKey="11"><Link to='/category/cadenas/plata-oro' className='text-body text-decoration-none'>Plata y oro</Link></Dropdown.Item>
-                    <Dropdown.Item eventKey="12"><Link to='/category/cadenas/enchapado-oro' className='text-body text-decoration-none'>Enchapado en oro</Link></Dropdown.Item>
-                    <Dropdown.Item eventKey="13"><Link to='/category/cadenas/acero' className='text-body text-decoration-none'>Acero</Link></Dropdown.Item>
-                    <Dropdown.Item eventKey="14"><Link to='/category/cadenas' className='text-body text-decoration-none'>Todos</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="9"><Link to='/categoria/cadenas/oro' className='text-body text-decoration-none'>Oro</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="10"><Link to='/categoria/cadenas/plata' className='text-body text-decoration-none'>Plata</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="11"><Link to='/categoria/cadenas/plata-oro' className='text-body text-decoration-none'>Plata y oro</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="12"><Link to='/categoria/cadenas/enchapado-oro' className='text-body text-decoration-none'>Enchapado en oro</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="13"><Link to='/categoria/cadenas/acero' className='text-body text-decoration-none'>Acero</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="14"><Link to='/categoria/cadenas' className='text-body text-decoration-none'>Todos</Link></Dropdown.Item>
                 </DropdownButton>
 
                 <DropdownButton
-                    key={'end'}
+                    key={'4'}
                     id={`dropdown-button-drop-${'end'}`}
                     drop={'end'}
                     variant="light"
                     title={` Collares `}
                     className="BgColorWhite NoBorder text-center" 
                     >
-                    <Dropdown.Item eventKey="15"><Link to='/category/collares/oro' className='text-body text-decoration-none'>Oro</Link></Dropdown.Item>
-                    <Dropdown.Item eventKey="16"><Link to='/category/collares/plata' className='text-body text-decoration-none'>Plata</Link></Dropdown.Item>
-                    <Dropdown.Item eventKey="17"><Link to='/category/collares/acero' className='text-body text-decoration-none'>Acero</Link></Dropdown.Item>
-                    <Dropdown.Item eventKey="18"><Link to='/category/collares' className='text-body text-decoration-none'>Todos</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="15"><Link to='/categoria/collares/oro' className='text-body text-decoration-none'>Oro</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="16"><Link to='/categoria/collares/plata' className='text-body text-decoration-none'>Plata</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="17"><Link to='/categoria/collares/acero' className='text-body text-decoration-none'>Acero</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="18"><Link to='/categoria/collares' className='text-body text-decoration-none'>Todos</Link></Dropdown.Item>
                 </DropdownButton>
 
                 <DropdownButton
-                    key={'end'}
+                    key={'5'}
                     id={`dropdown-button-drop-${'end'}`}
                     drop={'end'}
                     variant="light"
                     title={` Dijes `}
                     className="BgColorWhite NoBorder text-center" 
                     >
-                    <Dropdown.Item eventKey="19"><Link to='/category/dijes/oro' className='text-body text-decoration-none'>Oro</Link></Dropdown.Item>
-                    <Dropdown.Item eventKey="20"><Link to='/category/dijes/plata' className='text-body text-decoration-none'>Plata</Link></Dropdown.Item>
-                    <Dropdown.Item eventKey="21"><Link to='/category/dijes/acero' className='text-body text-decoration-none'>Acero</Link></Dropdown.Item>
-                    <Dropdown.Item eventKey="22"><Link to='/category/dijes' className='text-body text-decoration-none'>Todos</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="19"><Link to='/categoria/dijes/oro' className='text-body text-decoration-none'>Oro</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="20"><Link to='/categoria/dijes/plata' className='text-body text-decoration-none'>Plata</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="21"><Link to='/categoria/dijes/acero' className='text-body text-decoration-none'>Acero</Link></Dropdown.Item>
+                    <Dropdown.Item eventKey="22"><Link to='/categoria/dijes' className='text-body text-decoration-none'>Todos</Link></Dropdown.Item>
                 </DropdownButton>
 
               </NavDropdown>
@@ -118,7 +118,7 @@ const NavBar = () => {
           </div> {/* <----------//_*END* Navbar buttons_//----------> */}
 
           <div>
-            <CartWidget />  {/* <----------//_Cart Widget_//----------> */}
+            <Link to='/cart'><CartWidget /></Link>  {/* <----------//_Cart Widget_//----------> */}
           </div>
 
         </Container>

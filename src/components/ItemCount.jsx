@@ -1,21 +1,58 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
+import { useCartContext } from '../contexts/CartContext';
+import MinItemToast from "./MinItemToast";
+import MaxItemToast from "./MaxItemToast";
 
 const ItemCount = ( { stock } ) => {
-    const [counter, setCounter] = useState(0);
-  
+
+  const { setQuantity } = useCartContext()
+
+    const [count, setCount] = useState(1);
+    const [maxToast, setMaxToast] = useState(false);
+    const [minToast, setMinToast] = useState(false);
+
+    useEffect(()=> {
+      setTimeout(()=>{setMaxToast(false)},4000)
+    }, [maxToast])
+
+    useEffect(()=> {
+    setTimeout(()=>{setMinToast(false)},4000)
+    }, [minToast])
+
+    useEffect(() => {
+      setQuantity(count);
+    }, [count]);
+
     const handleIncrement = () => {
-      counter < stock ? setCounter(counter + 1) : alert('se alcanzo el maximo disponible del stock');
-    }
+      count < stock 
+        ?   setCount(count + 1)
+        :   setMaxToast(true)
+      }
+       
     const handleDecrement = () => {
-      counter > 0 ? setCounter(counter - 1) : alert('se alcanzo el minimo disponible del stock');
-    };
-  
+      count > 1
+        ?   setCount(count - 1)
+        :   setMinToast(true) 
+      }
+
     return (
-      <div>
-          <span><button onClick={handleDecrement}  className='px-2'>-</button></span>
-          <span><input type="button" value={ counter } className='px-4'/></span>
-          <span><button onClick={handleIncrement}>+</button></span>
-      </div>
+      <>
+        <div>
+            <span><button onClick={ ()=>{handleDecrement()} }  className='px-3 btn btn-outline-danger border'>  -  </button></span>
+            <span><input type="button" value={ count } className='px-4 btn btn-ligth border'/></span>
+            <span><button onClick={ ()=>{handleIncrement()} } className='btn btn-outline-success border'>+</button></span>
+        </div>
+
+        {maxToast
+            ?   <MaxItemToast setMaxToast={setMaxToast}/> 
+            :   null
+        }
+
+        {minToast
+            ?   <MinItemToast setMinToast={setMinToast}/> 
+            :   null
+        } 
+      </>
     );
   };
   

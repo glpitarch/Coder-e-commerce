@@ -1,12 +1,15 @@
-import { Link } from 'react-router-dom';
 import ShoppingCart from '../assets/images/icons/empty-shopping-cart.png';
+import { useCartContext } from '../contexts/CartContext';
 
 const CartWidget = () => {
+
+  const { qtyInCart } = useCartContext()
+
   return (
     
       <>
         <div> 
-          <p className='ColorGrayLike'><Link to='item'><img width='64' src={ShoppingCart} /></Link> Productos en el carrito: 0</p>
+          <p className='ColorGrayLike'><img width='64' src={ ShoppingCart }/><button className='btn btn-dark mt-2 ms-2'>Productos <br/> en tu carro: { `${qtyInCart}` }</button> </p>
         </div>
       </>
   );
